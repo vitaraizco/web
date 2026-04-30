@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vita Raíz — Bienestar natural desde la raíz</title>
+  <meta name="description" content="Suplementos naturales y complementos dietarios pensados para apoyar tu energía, equilibrio y bienestar diario. Fórmulas inspiradas en la naturaleza.">
+  <meta name="keywords" content="Vita Raíz, suplementos naturales, bienestar, complementos dietarios, energía natural, equilibrio">
+  <meta name="author" content="Vita Raíz">
+  <meta property="og:title" content="Vita Raíz — Bienestar natural desde la raíz">
+  <meta property="og:description" content="Suplementos naturales y complementos dietarios pensados para apoyar tu energía, equilibrio y bienestar diario.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vita Raíz">
+  <link rel="icon" href="assets/vita-raiz-favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="#inicio" class="logo-link">
+        <img src="assets/vita-raiz-icon.png" alt="Vita Raíz" class="logo-icon">
+        <span class="logo-text">Vita Raíz</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#mayoristas">Mayoristas</a>
+        <a href="#sobre">Sobre Vita Raíz</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="desktop-cta">
+        <a href="#mayoristas" class="link-copper">Soy mayorista</a>
+        <a href="#productos" class="btn btn-olive">Comprar ahora</a>
+      </div>
+
+      <!-- Mobile -->
+      <div class="mobile-actions">
+        <a href="#productos" class="mobile-buy-btn">Comprar</a>
+        <button class="hamburger-btn" id="mobile-menu-open" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="flex items-center gap-2">
+        <img src="assets/vita-raiz-icon.png" alt="Vita Raíz" style="height:28px;width:28px;">
+        <span style="font-family:var(--font-serif);font-size:1.25rem;font-weight:700;color:var(--olive);">Vita Raíz</span>
+      </div>
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Cerrar menú">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#mayoristas">Mayoristas</a>
+      <a href="#sobre">Sobre Vita Raíz</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="#mayoristas" style="display:block;text-align:center;color:var(--copper);font-weight:500;font-size:0.875rem;padding:0.5rem 0;">Soy mayorista</a>
+      <a href="#productos" class="btn btn-olive btn-w-full" style="margin-top:0.75rem;">Comprar ahora</a>
+    </div>
+  </div>
+
+  <main style="flex:1;">
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section id="inicio" class="hero">
+    <div class="hero-decor">
+      <div class="hero-blob-1"></div>
+      <div class="hero-blob-2"></div>
+      <div class="hero-blob-3"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-title fade-in">Bienestar natural desde la raíz</h1>
+        <p class="hero-subtitle fade-in" style="transition-delay:0.12s;">Suplementos naturales y complementos dietarios pensados para apoyar tu energía, equilibrio y bienestar diario.</p>
+        <p class="hero-support fade-in" style="transition-delay:0.24s;">Fórmulas inspiradas en la naturaleza, seleccionadas con cuidado y creadas para acompañarte en una vida más consciente y saludable.</p>
+        <div class="hero-ctas fade-in" style="transition-delay:0.36s;">
+          <a href="#productos" class="btn btn-olive btn-lg">Comprar ahora</a>
+          <a href="#categorias" class="btn btn-outline-olive btn-lg">Ver productos naturales</a>
+        </div>
+        <div class="hero-trust fade-in" style="transition-delay:0.48s;">
+          <div class="hero-trust-item">
+            <div class="hero-trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg></div>
+            <span class="hero-trust-text">Ingredientes seleccionados</span>
+          </div>
+          <div class="hero-trust-item">
+            <div class="hero-trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+            <span class="hero-trust-text">Compra segura</span>
+          </div>
+          <div class="hero-trust-item">
+            <div class="hero-trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg></div>
+            <span class="hero-trust-text">Envíos a domicilio</span>
+          </div>
+          <div class="hero-trust-item">
+            <div class="hero-trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg></div>
+            <span class="hero-trust-text">Atención por WhatsApp</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-logo fade-in-scale" style="transition-delay:0.24s;">
+        <div class="hero-logo-glow"></div>
+        <img src="assets/vita-raiz-hero.png" alt="Vita Raíz">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROBLEMS / NEEDS
+       ============================================ -->
+  <section id="problemas" class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="text-center mx-auto fade-in" style="max-width:768px;margin-bottom:3.5rem;">
+        <h2 class="section-title">Tu bienestar empieza por escuchar lo que tu cuerpo necesita</h2>
+      </div>
+      <div class="problems-grid" data-stagger>
+        <div class="problem-card fade-in">
+          <div class="problem-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg></div>
+          <p>Falta de energía durante el día</p>
+        </div>
+        <div class="problem-card fade-in">
+          <div class="problem-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z"/></svg></div>
+          <p>Estrés y cansancio acumulado</p>
+        </div>
+        <div class="problem-card fade-in">
+          <div class="problem-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+          <p>Defensas bajas</p>
+        </div>
+        <div class="problem-card fade-in">
+          <div class="problem-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg></div>
+          <p>Sueño poco reparador</p>
+        </div>
+        <div class="problem-card fade-in">
+          <div class="problem-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg></div>
+          <p>Digestión pesada</p>
+        </div>
+        <div class="problem-card fade-in">
+          <div class="problem-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"/></svg></div>
+          <p>Falta de equilibrio en la rutina diaria</p>
+        </div>
+      </div>
+      <p class="problems-closing fade-in">En Vita Raíz creemos que el bienestar no se fuerza: se cultiva desde la raíz.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VALUE PROPOSITION
+       ============================================ -->
+  <section id="beneficios" class="section value-section">
+    <div class="value-decor-1"></div>
+    <div class="value-decor-2"></div>
+    <div class="container" style="position:relative;">
+      <div class="text-center mx-auto fade-in" style="max-width:768px;margin-bottom:3.5rem;">
+        <h2 class="section-title">Naturaleza, ciencia y bienestar en una sola experiencia</h2>
+      </div>
+      <div class="value-grid" data-stagger>
+        <div class="value-item fade-in">
+          <div class="value-item-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg></div>
+          <p>Suplementos naturales seleccionados cuidadosamente</p>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-item-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg></div>
+          <p>Productos pensados para acompañar hábitos saludables</p>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-item-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg></div>
+          <p>Fórmulas enfocadas en bienestar integral</p>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-item-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0016.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.003 6.003 0 01-4.52.472m4.52-.472c.092.078.181.16.27.244m-4.79.228a6.003 6.003 0 01-4.52-.472m4.52.472a6.02 6.02 0 00.27-.244"/></svg></div>
+          <p>Marca confiable, estética premium y comunicación clara</p>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-item-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <p>Compra fácil, segura y con asesoría cercana</p>
+        </div>
+      </div>
+      <div class="text-center fade-in" style="transition-delay:0.4s;">
+        <a href="#productos" class="btn btn-copper btn-lg">Descubre nuestros productos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CATEGORIES
+       ============================================ -->
+  <section id="categorias" class="section" style="background:var(--cream-warm);">
+    <div class="container">
+      <div class="text-center mx-auto fade-in" style="max-width:768px;margin-bottom:3.5rem;">
+        <h2 class="section-title">Encuentra el apoyo natural que tu cuerpo necesita</h2>
+      </div>
+      <div class="categories-grid" data-stagger>
+        <div class="category-card fade-in">
+          <div class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg></div>
+          <h3>Energía y vitalidad</h3>
+          <p>Suplementos para apoyar el rendimiento diario, la circulación y reducir la sensación de agotamiento.</p>
+          <a href="#productos" class="category-link">Explorar <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
+        </div>
+        <div class="category-card fade-in">
+          <div class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+          <h3>Defensas e inmunidad</h3>
+          <p>Vitaminas, minerales y probióticos para apoyar el sistema inmune y las defensas naturales.</p>
+          <a href="#productos" class="category-link">Explorar <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
+        </div>
+        <div class="category-card fade-in">
+          <div class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg></div>
+          <h3>Calma y equilibrio</h3>
+          <p>Magnesio y suplementos naturales orientados al bienestar emocional y la relajación diaria.</p>
+          <a href="#productos" class="category-link">Explorar <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
+        </div>
+        <div class="category-card fade-in">
+          <div class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg></div>
+          <h3>Belleza desde adentro</h3>
+          <p>Colágeno, biotina, zinc y vitamina C para apoyar piel, cabello y uñas desde el interior.</p>
+          <a href="#productos" class="category-link">Explorar <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
+        </div>
+        <div class="category-card fade-in">
+          <div class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg></div>
+          <h3>Digestión y bienestar interno</h3>
+          <p>Probióticos y suplementos herbales para apoyar el equilibrio digestivo y la depuración natural.</p>
+          <a href="#productos" class="category-link">Explorar <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PRODUCTS
+       ============================================ -->
+  <section id="productos" class="section" style="background:var(--cream);">
+    <div class="container">
+      <h2 class="section-title text-center fade-in" style="margin-bottom:1rem;">Productos destacados de Vita Raíz</h2>
+      <p class="text-center mx-auto fade-in" style="max-width:640px;color:var(--warm-gray-light);margin-bottom:2.5rem;transition-delay:0.15s;">Suplementos naturales de la más alta calidad para apoyar tu bienestar diario</p>
+
+      <!-- Tabs -->
+      <div class="products-tabs fade-in" style="transition-delay:0.2s;">
+        <button class="tab-btn active" data-filter="todos">Todos</button>
+        <button class="tab-btn" data-filter="energia">Energía</button>
+        <button class="tab-btn" data-filter="defensas">Defensas</button>
+        <button class="tab-btn" data-filter="calma">Calma</button>
+        <button class="tab-btn" data-filter="belleza">Belleza</button>
+        <button class="tab-btn" data-filter="digestion">Digestión</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+
+        <!-- L-Arginina -->
+        <div class="product-card" data-categories="energia,defensas">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/l-arginina.png" alt="L-Arginina"></div>
+            <div class="product-badge"><span class="badge badge-olive">Popular</span></div>
+          </div>
+          <div class="product-content">
+            <h3>L-Arginina</h3>
+            <p>Aminoácido esencial para apoyar la circulación, energía y bienestar cardiovascular diario.</p>
+            <div class="product-footer">
+              <span class="product-price">$59.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Citrato de Magnesio + Potasio -->
+        <div class="product-card" data-categories="energia,calma">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/citrato-magnesio-potasio.png" alt="Citrato de Magnesio + Potasio"></div>
+            <div class="product-badge"><span class="badge badge-sage">Bienestar</span></div>
+          </div>
+          <div class="product-content">
+            <h3>Citrato de Magnesio + Potasio</h3>
+            <p>Suplemento de alta absorción para acompañar el bienestar muscular y el descanso nocturno.</p>
+            <div class="product-footer">
+              <span class="product-price">$64.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAC Prame -->
+        <div class="product-card" data-categories="energia,calma">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/mac-prame.png" alt="MAC Prame"></div>
+            <div class="product-badge"><span class="badge badge-root-brown">Premium</span></div>
+          </div>
+          <div class="product-content">
+            <h3>MAC Prame</h3>
+            <p>Suplemento natural a base de Maca para apoyar la vitalidad, energía y equilibrio hormonal.</p>
+            <div class="product-footer">
+              <span class="product-price">$74.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARTILG Prame -->
+        <div class="product-card" data-categories="energia">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/cartilg-prame.png" alt="CARTILG Prame"></div>
+            <div class="product-badge"><span class="badge badge-olive-light">Especializado</span></div>
+          </div>
+          <div class="product-content">
+            <h3>CARTILG Prame</h3>
+            <p>Fórmula especial para apoyar la salud articular y la movilidad de forma natural.</p>
+            <div class="product-footer">
+              <span class="product-price">$79.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- UG-SANG DRA Prame -->
+        <div class="product-card" data-categories="energia,digestion">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/ug-sang-prame.png" alt="UG-SANG DRA Prame"></div>
+            <div class="product-badge"><span class="badge badge-sage-80">Natural</span></div>
+          </div>
+          <div class="product-content">
+            <h3>UG-SANG DRA Prame</h3>
+            <p>Suplemento herbal tradicional para apoyar el bienestar circulatorio y la vitalidad natural.</p>
+            <div class="product-footer">
+              <span class="product-price">$69.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIAB-ZAN Prame -->
+        <div class="product-card" data-categories="energia,digestion">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/diab-zan-prame.png" alt="DIAB-ZAN Prame"></div>
+            <div class="product-badge"><span class="badge badge-olive-light">Especializado</span></div>
+          </div>
+          <div class="product-content">
+            <h3>DIAB-ZAN Prame</h3>
+            <p>Complemento natural orientado a apoyar el equilibrio metabólico y el bienestar general.</p>
+            <div class="product-footer">
+              <span class="product-price">$74.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Citrato de Zinc -->
+        <div class="product-card" data-categories="defensas,belleza">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/citrato-zinc.png" alt="Citrato de Zinc"></div>
+            <div class="product-badge"><span class="badge badge-copper-80">Esencial</span></div>
+          </div>
+          <div class="product-content">
+            <h3>Citrato de Zinc</h3>
+            <p>Mineral esencial de alta absorción para apoyar las defensas naturales y la salud de la piel.</p>
+            <div class="product-footer">
+              <span class="product-price">$44.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vitamina C -->
+        <div class="product-card" data-categories="defensas,belleza">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/vitamina-c.png" alt="Vitamina C"></div>
+            <div class="product-badge"><span class="badge badge-sage">Favorito</span></div>
+          </div>
+          <div class="product-content">
+            <h3>Vitamina C</h3>
+            <p>Antioxidante clave para apoyar el sistema inmune, la luminosidad de la piel y la energía diaria.</p>
+            <div class="product-footer">
+              <span class="product-price">$39.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Probióticos / Digestivo -->
+        <div class="product-card" data-categories="defensas,digestion">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/probioticos-digestivo.png" alt="Probióticos / Digestivo"></div>
+            <div class="product-badge"><span class="badge badge-sage">Bienestar</span></div>
+          </div>
+          <div class="product-content">
+            <h3>Probióticos / Digestivo</h3>
+            <p>Cepas probióticas seleccionadas para apoyar la flora intestinal y las defensas del organismo.</p>
+            <div class="product-footer">
+              <span class="product-price">$59.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colágeno + Biotina -->
+        <div class="product-card" data-categories="defensas,belleza">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/colageno-biotina.png" alt="Colágeno + Biotina"></div>
+            <div class="product-badge"><span class="badge badge-copper">Bestseller</span></div>
+          </div>
+          <div class="product-content">
+            <h3>Colágeno + Biotina</h3>
+            <p>Fórmula de belleza que apoya la firmeza de la piel, la fuerza del cabello y las uñas desde adentro.</p>
+            <div class="product-footer">
+              <span class="product-price">$89.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- HIG-SAN Prame -->
+        <div class="product-card" data-categories="digestion">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/hig-san-prame.png" alt="HIG-SAN Prame"></div>
+            <div class="product-badge"><span class="badge badge-sage-80">Natural</span></div>
+          </div>
+          <div class="product-content">
+            <h3>HIG-SAN Prame</h3>
+            <p>Suplemento herbal para apoyar las funciones hepáticas y el proceso de depuración natural.</p>
+            <div class="product-footer">
+              <span class="product-price">$69.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHANCA DRA Prame -->
+        <div class="product-card" data-categories="digestion">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/chanca-dra-prame.png" alt="CHANCA DRA Prame"></div>
+            <div class="product-badge"><span class="badge badge-olive-80">Herbal</span></div>
+          </div>
+          <div class="product-content">
+            <h3>CHANCA DRA Prame</h3>
+            <p>Planta tradicional para apoyar el bienestar renal y la salud del sistema digestivo.</p>
+            <div class="product-footer">
+              <span class="product-price">$64.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- UROL Prame -->
+        <div class="product-card" data-categories="digestion">
+          <div class="product-image-area">
+            <div class="product-image-wrap"><img src="assets/urol-prame.png" alt="UROL Prame"></div>
+            <div class="product-badge"><span class="badge badge-olive-light">Especializado</span></div>
+          </div>
+          <div class="product-content">
+            <h3>UROL Prame</h3>
+            <p>Fórmula natural orientada a apoyar la salud del tracto urinario y el bienestar general.</p>
+            <div class="product-footer">
+              <span class="product-price">$69.900 COP</span>
+              <button class="product-add-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg> Agregar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CLIENT SELECTOR
+       ============================================ -->
+  <section class="section" style="background:var(--cream-warm);">
+    <div class="container">
+      <h2 class="section-title text-center fade-in" style="margin-bottom:3rem;">Elige cómo quieres comprar en Vita Raíz</h2>
+      <div class="client-cards">
+        <!-- Individual -->
+        <div class="client-card fade-in-left">
+          <div class="client-card-icon individual"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg></div>
+          <h3>Cliente individual</h3>
+          <p>Compra tus suplementos naturales favoritos de forma rápida, segura y sencilla.</p>
+          <ul class="client-benefits">
+            <li><div class="check-icon individual"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><span>Compra por unidad</span></li>
+            <li><div class="check-icon individual"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><span>Pago seguro</span></li>
+            <li><div class="check-icon individual"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><span>Envío a domicilio</span></li>
+            <li><div class="check-icon individual"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><span>Atención por WhatsApp</span></li>
+          </ul>
+          <button class="btn btn-olive btn-w-full" style="padding:1.25rem;">Comprar como cliente individual</button>
+        </div>
+        <!-- Wholesale -->
+        <div class="client-card client-card-wholesale fade-in-right">
+          <div class="client-card-icon wholesale"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg></div>
+          <h3>Cliente mayorista / comercial</h3>
+          <p>Accede a precios especiales por volumen para tiendas naturistas, distribuidores, gimnasios, profesionales del bienestar y comercios aliados.</p>
+          <ul class="client-benefits">
+            <li><div class="check-icon wholesale"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><span>Catálogo mayorista</span></li>
+            <li><div class="check-icon wholesale"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><span>Precios por volumen</span></li>
+            <li><div class="check-icon wholesale"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><span>Atención comercial personalizada</span></li>
+            <li><div class="check-icon wholesale"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><span>Posibilidad de pedidos recurrentes</span></li>
+          </ul>
+          <button class="btn btn-copper btn-w-full" style="padding:1.25rem;">Solicitar acceso mayorista</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TRUST
+       ============================================ -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container" style="max-width:896px;">
+      <h2 class="section-title text-center fade-in" style="margin-bottom:3rem;">Bienestar natural con información clara y responsable</h2>
+      <div class="trust-grid" data-stagger>
+        <div class="trust-item fade-in">
+          <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+          <p>Productos originales y seleccionados cuidadosamente</p>
+        </div>
+        <div class="trust-item fade-in">
+          <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg></div>
+          <p>Información clara sobre uso y recomendaciones</p>
+        </div>
+        <div class="trust-item fade-in">
+          <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></div>
+          <p>Atención responsable antes de comprar</p>
+        </div>
+        <div class="trust-item fade-in">
+          <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+          <p>Comunicación transparente, sin promesas exageradas</p>
+        </div>
+        <div class="trust-item fade-in span-2">
+          <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg></div>
+          <p>Suplementos pensados para acompañar hábitos saludables</p>
+        </div>
+      </div>
+      <div class="disclaimer-box fade-in">
+        <p>⚠️ Los suplementos dietarios no son medicamentos y no sustituyen una alimentación equilibrada ni la consulta con un profesional de la salud.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       HOW TO BUY
+       ============================================ -->
+  <section class="section how-section">
+    <div class="container">
+      <h2 class="section-title text-center fade-in" style="margin-bottom:3.5rem;">Comprar en Vita Raíz es fácil</h2>
+      <div class="how-steps">
+        <div class="how-step fade-in" style="transition-delay:0s;">
+          <div class="how-step-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg></div>
+          <span class="how-step-number">01</span>
+          <h3>Elige tus productos</h3>
+          <p>Explora nuestras categorías y selecciona lo que necesitas.</p>
+        </div>
+        <div class="how-step fade-in" style="transition-delay:0.15s;">
+          <div class="how-step-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg></div>
+          <span class="how-step-number">02</span>
+          <h3>Paga de forma segura</h3>
+          <p>Realiza tu compra por la tienda o confirma tu pedido por WhatsApp.</p>
+        </div>
+        <div class="how-step fade-in" style="transition-delay:0.3s;">
+          <div class="how-step-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg></div>
+          <span class="how-step-number">03</span>
+          <h3>Recibe en casa</h3>
+          <p>Enviamos tus productos de forma segura y cuidadosa.</p>
+        </div>
+      </div>
+      <div class="text-center fade-in" style="margin-top:3.5rem;transition-delay:0.5s;">
+        <button class="btn btn-copper btn-lg" style="height:48px;">Empezar mi compra</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS
+       ============================================ -->
+  <section class="section" style="background:var(--cream-warm);">
+    <div class="container" style="max-width:1152px;">
+      <h2 class="section-title text-center fade-in" style="margin-bottom:3rem;">Personas que ya cultivan su bienestar con Vita Raíz</h2>
+      <div class="testimonials-grid" data-stagger>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-quote-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg></div>
+          <p class="quote">"Me encantó la presentación de los productos y la asesoría. Se siente una marca confiable y muy natural."</p>
+          <p class="author">— Laura M., Bogotá</p>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-quote-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg></div>
+          <p class="quote">"Compré vitaminas y colágeno. Todo llegó muy bien empacado y la atención por WhatsApp fue excelente."</p>
+          <p class="author">— Camila R., Medellín</p>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-quote-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg></div>
+          <p class="quote">"Como tienda naturista, me interesa trabajar con marcas que se vean serias y cuidadosas. Vita Raíz transmite eso."</p>
+          <p class="author">— Andrés P., cliente comercial</p>
+        </div>
+      </div>
+      <div class="trust-indicators" data-stagger>
+        <div class="trust-indicator fade-in">
+          <div class="trust-indicator-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg></div>
+          <p>+1.000 clientes acompañados</p>
+        </div>
+        <div class="trust-indicator fade-in">
+          <div class="trust-indicator-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg></div>
+          <p>Envíos a nivel nacional</p>
+        </div>
+        <div class="trust-indicator fade-in">
+          <div class="trust-indicator-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></div>
+          <p>Atención personalizada</p>
+        </div>
+        <div class="trust-indicator fade-in">
+          <div class="trust-indicator-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg></div>
+          <p>Productos seleccionados con cuidado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHOLESALE B2B
+       ============================================ -->
+  <section id="mayoristas" class="section" style="background:var(--cream);">
+    <div class="container" style="max-width:1152px;">
+      <div class="text-center mx-auto fade-in" style="max-width:768px;margin-bottom:3rem;">
+        <h2 class="section-title" style="margin-bottom:1rem;">¿Tienes una tienda, gimnasio o negocio de bienestar?</h2>
+        <p style="color:var(--warm-gray-light);font-size:1.125rem;">Conviértete en aliado comercial de Vita Raíz y accede a beneficios especiales para compras por volumen.</p>
+      </div>
+      <div class="wholesale-grid">
+        <!-- Left -->
+        <div class="wholesale-list fade-in-left">
+          <div>
+            <h3>Perfil de aliados</h3>
+            <ul>
+              <li><svg class="check-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Tiendas naturistas</span></li>
+              <li><svg class="check-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Droguerías</span></li>
+              <li><svg class="check-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Gimnasios</span></li>
+              <li><svg class="check-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Centros de estética</span></li>
+              <li><svg class="check-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Spas</span></li>
+              <li><svg class="check-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Profesionales del bienestar</span></li>
+              <li><svg class="check-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Distribuidores independientes</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Beneficios</h3>
+            <ul>
+              <li><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg><span>Catálogo mayorista</span></li>
+              <li><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg><span>Precios especiales por volumen</span></li>
+              <li><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg><span>Atención directa</span></li>
+              <li><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg><span>Asesoría comercial</span></li>
+              <li><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg><span>Despachos programados</span></li>
+              <li><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg><span>Posibilidad de recompra recurrente</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right: Form -->
+        <div class="fade-in-right">
+          <form id="wholesale-form" class="wholesale-form">
+            <div class="form-group">
+              <label class="form-label" for="nombreCompleto">Nombre completo</label>
+              <input class="form-input" type="text" id="nombreCompleto" name="nombreCompleto" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nombreEmpresa">Nombre de empresa</label>
+              <input class="form-input" type="text" id="nombreEmpresa" name="nombreEmpresa" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="tipoNegocio">Tipo de negocio</label>
+              <input class="form-input" type="text" id="tipoNegocio" name="tipoNegocio" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ciudad">Ciudad</label>
+              <input class="form-input" type="text" id="ciudad" name="ciudad" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="whatsapp">WhatsApp</label>
+              <input class="form-input" type="tel" id="whatsapp" name="whatsapp" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="correo">Correo electrónico</label>
+              <input class="form-input" type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mensaje">Mensaje</label>
+              <textarea class="form-input" id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-copper btn-w-full btn-lg">Solicitar catálogo mayorista</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT
+       ============================================ -->
+  <section id="sobre" class="section" style="background:var(--cream-warm);">
+    <div class="container" style="max-width:1024px;">
+      <div class="about-inner">
+        <div class="about-logo fade-in-scale">
+          <div class="about-logo-glow"></div>
+          <img src="assets/vita-raiz-about.png" alt="Vita Raíz">
+        </div>
+        <div class="about-text fade-in">
+          <h2>Una marca creada para volver a lo esencial</h2>
+          <p>Vita Raíz nace con la intención de acercar el bienestar natural a la vida diaria. Creemos en productos que acompañan, rutinas que se cultivan y decisiones conscientes para cuidar el cuerpo desde adentro.</p>
+          <p>Nuestra esencia combina naturaleza, cuidado y confianza, con una experiencia de compra simple, cercana y responsable.</p>
+          <div class="values-row" data-stagger>
+            <div class="value-badge fade-in"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg><span>Naturalidad</span></div>
+            <div class="value-badge fade-in"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg><span>Confianza</span></div>
+            <div class="value-badge fade-in"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg><span>Cuidado</span></div>
+            <div class="value-badge fade-in"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>Transparencia</span></div>
+            <div class="value-badge fade-in"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg><span>Bienestar consciente</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ
+       ============================================ -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container" style="max-width:768px;">
+      <h2 class="section-title text-center fade-in" style="margin-bottom:2.5rem;">Preguntas frecuentes</h2>
+      <div class="faq-list fade-in" style="transition-delay:0.2s;">
+        <div class="faq-item">
+          <button class="faq-question">¿Los productos de Vita Raíz son medicamentos?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg></button>
+          <div class="faq-answer"><p>No. Son suplementos dietarios o productos naturales, según corresponda. No sustituyen tratamientos médicos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Puedo tomar suplementos sin consultar a un profesional?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg></button>
+          <div class="faq-answer"><p>Recomendamos revisar las indicaciones del producto y consultar con un profesional de la salud si estás embarazada, lactando, tienes una condición médica o tomas medicamentos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Hacen envíos a toda Colombia?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg></button>
+          <div class="faq-answer"><p>Sí, realizamos envíos nacionales a toda Colombia.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Tienen precios al por mayor?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg></button>
+          <div class="faq-answer"><p>Sí. Los clientes mayoristas pueden solicitar catálogo y precios especiales por volumen.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Puedo comprar por WhatsApp?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg></button>
+          <div class="faq-answer"><p>Sí. Puedes contactarnos directamente por WhatsApp para realizar tu compra de forma sencilla.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <section class="section final-cta">
+    <div class="final-cta-decor-1"></div>
+    <div class="final-cta-decor-2"></div>
+    <div class="final-cta-decor-3"></div>
+    <div class="container" style="position:relative;max-width:896px;">
+      <div class="text-center fade-in">
+        <h2>Empieza a cultivar tu bienestar desde hoy</h2>
+        <p>Elige productos naturales que acompañen tu energía, equilibrio y rutina diaria.</p>
+        <div class="final-cta-buttons">
+          <button class="btn btn-copper btn-lg" style="min-width:200px;">Comprar ahora</button>
+          <a href="https://wa.me/573150999272?text=Hola%20Vita%20Raíz" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cream btn-lg" style="min-width:200px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:20px;height:20px;margin-right:0.5rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+            Hablar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer id="contacto" class="site-footer">
+    <div class="container" style="max-width:1152px;padding-top:3rem;padding-bottom:3rem;">
+      <div class="footer-grid">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <img src="assets/vita-raiz-footer.png" alt="Vita Raíz">
+          <p class="brand-name">Vita Raíz</p>
+          <p class="tagline">Bienestar natural desde la raíz</p>
+        </div>
+        <!-- Contacto -->
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><span>+57 315 099 9272</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg><span>contacto@vitaraiz.com</span></li>
+          </ul>
+        </div>
+        <!-- Legal -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><span>Términos y condiciones</span></li>
+            <li><span>Política de privacidad</span></li>
+            <li><span>Política de cambios y devoluciones</span></li>
+          </ul>
+        </div>
+        <!-- Redes -->
+        <div class="footer-col">
+          <h4>Redes</h4>
+          <div class="footer-social">
+            <div class="footer-social-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"/></svg></div>
+            <div class="footer-social-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg></div>
+          </div>
+          <p style="color:rgba(250,247,242,0.7);font-size:0.875rem;">Métodos de pago</p>
+          <p style="color:rgba(250,247,242,0.7);font-size:0.875rem;margin-top:0.25rem;">Envíos nacionales</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Los suplementos dietarios no son medicamentos. Su consumo debe acompañarse de una alimentación equilibrada y hábitos de vida saludables. Ante cualquier condición médica, consulte a un profesional de la salud.</p>
+        <p>&copy; 2024 Vita Raíz. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       WHATSAPP FLOATING BUTTON
+       ============================================ -->
+  <button class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
