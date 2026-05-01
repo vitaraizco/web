@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VITA RAÍZ — Suplementos & Nutrición Natural</title>
+  <meta name="description" content="Suplementos y nutrición natural seleccionados para acompañar tu energía, defensas, movimiento, belleza, digestión y bienestar. Compra fácil por WhatsApp." />
+  <link rel="icon" type="image/jpeg" href="assets/logos/Isotipo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     TOP BAR
+     ============================================================ -->
+<div class="top-bar">
+  <div class="container">
+    <span class="top-bar-item">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1 3h15l-1.5 9H2.5L1 3zm0 0L0 0M9 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm7 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+      Envíos según disponibilidad y ciudad
+    </span>
+    <span class="top-bar-item">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Atención personalizada por WhatsApp
+    </span>
+  </div>
+</div>
+
+<!-- ============================================================
+     MOBILE MENU OVERLAY
+     ============================================================ -->
+<nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menú móvil">
+  <a href="#inicio" onclick="closeMobileMenu()">Inicio</a>
+  <a href="#productos" onclick="closeMobileMenu()">Productos</a>
+  <a href="#categorias" onclick="closeMobileMenu()">Categorías</a>
+  <a href="#beneficios" onclick="closeMobileMenu()">Beneficios</a>
+  <a href="#contacto" onclick="closeMobileMenu()">Contacto</a>
+</nav>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="inicio">
+  <div class="header-inner">
+    <!-- Logo -->
+    <a href="#inicio" class="header-logo" aria-label="Vita Raíz — Inicio">
+      <!-- LOGO: Logotipo.jpeg (text + tagline) for desktop header -->
+      <img src="assets/logos/Logotipo.jpeg" alt="VITA RAÍZ — Suplementos & Nutrición Natural" id="headerLogo" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="header-nav" aria-label="Menú principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Actions -->
+    <div class="header-actions">
+      <!-- Search -->
+      <button class="header-icon-btn" id="searchBtn" aria-label="Buscar productos" onclick="document.getElementById('catalogSearch').focus(); document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <!-- Cart -->
+      <button class="header-icon-btn" id="cartBtn" aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count hidden" id="cartCount">0</span>
+      </button>
+      <!-- WhatsApp button -->
+      <a href="https://wa.me/573150999272" target="_blank" rel="noopener" class="btn-header-wa" id="headerWaBtn" aria-label="Pedir por WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        <span>Pedir por WhatsApp</span>
+      </a>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="heroSection">
+  <div class="container">
+    <!-- Glass card left -->
+    <div class="hero-glass fade-in">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="#B89045"/></svg>
+        <span class="eyebrow">Bienestar Natural</span>
+      </div>
+      <h1 class="hero-title">Bienestar natural para tu día a día</h1>
+      <p class="hero-subtitle">Suplementos y nutrición natural seleccionados para acompañar tu energía, defensas, movimiento, belleza, digestión y bienestar.</p>
+      <div class="hero-buttons">
+        <a href="#productos" class="btn-primary" id="heroIrProductos">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+          Ir a productos
+        </a>
+        <a href="https://wa.me/573150999272" target="_blank" rel="noopener" class="btn-secondary" id="heroWaBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#8A6A2F"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Comprar por WhatsApp
+        </a>
+      </div>
+    </div>
+    <!-- Product composition right -->
+    <div class="hero-products fade-in" aria-hidden="true">
+      <!-- Three featured product images layered -->
+      <img src="assets/products/Citrato de magnesio_fondo.png" alt="Citrato de Magnesio + Potasio" loading="lazy" />
+      <img src="assets/products/Colageno_fondo.png" alt="Colágeno + Biotina" loading="lazy" />
+      <img src="assets/products/Vitamina c_fondo.png" alt="Vitamina C" loading="lazy" />
+    </div>
+  </div>
+  <!-- Scroll arrow -->
+  <a href="#categorias" class="scroll-arrow" aria-label="Ir a categorías">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
+  </a>
+</section>
+
+<!-- ============================================================
+     CATEGORIES
+     ============================================================ -->
+<section class="categories" id="categorias">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="eyebrow">Explora por categoría</p>
+      <h2 class="section-title">¿Qué buscas hoy?</h2>
+    </div>
+    <div class="categories-grid" id="categoriesGrid">
+      <button class="category-card active" data-cat="Todos" id="catTodos">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        <span>Todos</span>
+      </button>
+      <button class="category-card" data-cat="Energía" id="catEnergia">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span>Energía</span>
+      </button>
+      <button class="category-card" data-cat="Defensas" id="catDefensas">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Defensas</span>
+      </button>
+      <button class="category-card" data-cat="Calma" id="catCalma">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span>Calma</span>
+      </button>
+      <button class="category-card" data-cat="Belleza" id="catBelleza">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        <span>Belleza</span>
+      </button>
+      <button class="category-card" data-cat="Digestión" id="catDigestion">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <span>Digestión</span>
+      </button>
+      <button class="category-card" data-cat="Movimiento" id="catMovimiento">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="5" r="2"/><path d="m10 22 1-8-3 3"/><path d="m14 22-1-8 3 3"/><path d="M8 12c-1.5 0-3-.5-3-2 0-1 1-2 2-2h10c1 0 2 1 2 2 0 1.5-1.5 2-3 2"/></svg>
+        <span>Movimiento</span>
+      </button>
+      <button class="category-card" data-cat="Depuración" id="catDepuracion">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+        <span>Depuración</span>
+      </button>
+      <button class="category-card" data-cat="Bienestar" id="catBienestar">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 22c1.25-1.25 2.5-2.5 3.5-4 1.3-1.97 1.9-3.97 2-5.5.1-1.4-.2-2.9-.6-4.1"/><path d="M6.3 8.5A14.3 14.3 0 0 0 8 22"/><path d="M8 22a14 14 0 0 0 6-10c.7-3.5 0-6-2-8"/><path d="M12 4c2 3 2.5 5.5 1.5 9S10 20 12 22"/></svg>
+        <span>Bienestar</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED PRODUCTS
+     ============================================================ -->
+<section class="featured" id="productos">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="eyebrow">Productos Destacados</p>
+      <h2 class="section-title">Lo mejor para tu bienestar</h2>
+    </div>
+    <div class="featured-grid" id="featuredGrid">
+
+      <!-- Featured 1: Citrato de Magnesio + Potasio -->
+      <div class="product-card-featured fade-in" data-id="3">
+        <img class="product-img" src="assets/products/Citrato de magnesio_fondo.png" alt="Citrato de Magnesio + Potasio" loading="lazy" />
+        <div class="product-info">
+          <p class="product-name">Citrato de Magnesio + Potasio</p>
+          <p class="product-cat">Energía</p>
+          <p class="product-price" data-price-id="3">Precio por confirmar</p>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="3" id="featBtn3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+              Agregar al carrito
+            </button>
+            <a href="https://wa.me/573150999272?text=Hola%2C%20quiero%20consultar%20sobre%20Citrato%20de%20Magnesio%20%2B%20Potasio" target="_blank" rel="noopener" class="btn-wa-consult">
+              <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured 2: Colágeno + Biotina -->
+      <div class="product-card-featured fade-in" data-id="5">
+        <img class="product-img" src="assets/products/Colageno_fondo.png" alt="Colágeno + Biotina" loading="lazy" />
+        <div class="product-info">
+          <p class="product-name">Colágeno + Biotina</p>
+          <p class="product-cat">Belleza</p>
+          <p class="product-price" data-price-id="5">Precio por confirmar</p>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="5" id="featBtn5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+              Agregar al carrito
+            </button>
+            <a href="https://wa.me/573150999272?text=Hola%2C%20quiero%20consultar%20sobre%20Col%C3%A1geno%20%2B%20Biotina" target="_blank" rel="noopener" class="btn-wa-consult">
+              <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured 3: Prebióticos + Probióticos -->
+      <div class="product-card-featured fade-in" data-id="10">
+        <img class="product-img" src="assets/products/Prebíoticos_fondo.png" alt="Prebióticos + Probióticos" loading="lazy" />
+        <div class="product-info">
+          <p class="product-name">Prebióticos + Probióticos</p>
+          <p class="product-cat">Digestión</p>
+          <p class="product-price" data-price-id="10">Precio por confirmar</p>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="10" id="featBtn10">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+              Agregar al carrito
+            </button>
+            <a href="https://wa.me/573150999272?text=Hola%2C%20quiero%20consultar%20sobre%20Prebi%C3%B3ticos%20%2B%20Probi%C3%B3ticos" target="_blank" rel="noopener" class="btn-wa-consult">
+              <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured 4: Vitamina C -->
+      <div class="product-card-featured fade-in" data-id="14">
+        <img class="product-img" src="assets/products/Vitamina c_fondo.png" alt="Vitamina C" loading="lazy" />
+        <div class="product-info">
+          <p class="product-name">Vitamina C</p>
+          <p class="product-cat">Defensas</p>
+          <p class="product-price" data-price-id="14">Precio por confirmar</p>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="14" id="featBtn14">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+              Agregar al carrito
+            </button>
+            <a href="https://wa.me/573150999272?text=Hola%2C%20quiero%20consultar%20sobre%20Vitamina%20C" target="_blank" rel="noopener" class="btn-wa-consult">
+              <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATALOG
+     ============================================================ -->
+<section class="catalog" id="catalogo">
+  <div class="container">
+    <div class="catalog-header fade-in">
+      <p class="eyebrow">Catálogo de Productos</p>
+      <h2 class="section-title">Todos nuestros productos</h2>
+    </div>
+    <div class="catalog-layout">
+      <!-- Sidebar -->
+      <aside class="catalog-sidebar" id="catalogSidebar">
+        <h3>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Categorías
+        </h3>
+        <button class="sidebar-cat active" data-cat="Todos" id="sideCatTodos">Todos</button>
+        <button class="sidebar-cat" data-cat="Energía" id="sideCatEnergia">Energía</button>
+        <button class="sidebar-cat" data-cat="Defensas" id="sideCatDefensas">Defensas</button>
+        <button class="sidebar-cat" data-cat="Calma" id="sideCatCalma">Calma</button>
+        <button class="sidebar-cat" data-cat="Belleza" id="sideCatBelleza">Belleza</button>
+        <button class="sidebar-cat" data-cat="Digestión" id="sideCatDigestion">Digestión</button>
+        <button class="sidebar-cat" data-cat="Movimiento" id="sideCatMovimiento">Movimiento</button>
+        <button class="sidebar-cat" data-cat="Depuración" id="sideCatDepuracion">Depuración</button>
+        <button class="sidebar-cat" data-cat="Bienestar" id="sideCatBienestar">Bienestar</button>
+      </aside>
+
+      <!-- Main area -->
+      <div class="catalog-main">
+        <div class="catalog-controls">
+          <div class="catalog-search">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="catalogSearch" placeholder="Buscar producto…" aria-label="Buscar productos" />
+          </div>
+          <div class="catalog-sort">
+            <select id="catalogSort" aria-label="Ordenar productos">
+              <option value="destacados">Ordenar por: Destacados</option>
+              <option value="az">Nombre A-Z</option>
+              <option value="precio-asc">Precio menor a mayor</option>
+              <option value="precio-desc">Precio mayor a menor</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product grid — rendered by JS, but static fallback below -->
+        <div class="catalog-grid" id="catalogGrid">
+
+          <!-- 1. CARTILG PRAME -->
+          <div class="product-card-small fade-in" data-id="1" data-cat="Movimiento" data-cats="Bienestar,Energía">
+            <img class="product-img" src="assets/products/Cartilg_fondo.png" alt="Cartilg Prame" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Cartilg Prame</p>
+              <p class="product-cat">Movimiento</p>
+              <p class="product-price" data-price-id="1">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="1" id="catBtn1">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. CHANCA DRA PRAME -->
+          <div class="product-card-small fade-in" data-id="2" data-cat="Depuración" data-cats="Digestión,Bienestar">
+            <img class="product-img" src="assets/products/Chanca Dra_fondo.png" alt="Chanca Dra Prame" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Chanca Dra Prame</p>
+              <p class="product-cat">Depuración</p>
+              <p class="product-price" data-price-id="2">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="2" id="catBtn2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 3. Citrato de Magnesio + Potasio -->
+          <div class="product-card-small fade-in" data-id="3" data-cat="Energía" data-cats="Movimiento,Bienestar">
+            <img class="product-img" src="assets/products/Citrato de magnesio_fondo.png" alt="Citrato de Magnesio + Potasio" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Citrato de Magnesio + Potasio</p>
+              <p class="product-cat">Energía</p>
+              <p class="product-price" data-price-id="3">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="3" id="catBtn3">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 4. Citrato de Zinc -->
+          <div class="product-card-small fade-in" data-id="4" data-cat="Defensas" data-cats="Energía,Bienestar">
+            <img class="product-img" src="assets/products/Citrato zinc_fondo.png" alt="Citrato de Zinc" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Citrato de Zinc</p>
+              <p class="product-cat">Defensas</p>
+              <p class="product-price" data-price-id="4">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="4" id="catBtn4">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 5. Colágeno + Biotina -->
+          <div class="product-card-small fade-in" data-id="5" data-cat="Belleza" data-cats="Bienestar">
+            <img class="product-img" src="assets/products/Colageno_fondo.png" alt="Colágeno + Biotina" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Colágeno + Biotina</p>
+              <p class="product-cat">Belleza</p>
+              <p class="product-price" data-price-id="5">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="5" id="catBtn5">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 6. DIAB-ZAN PRAME -->
+          <div class="product-card-small fade-in" data-id="6" data-cat="Bienestar" data-cats="Digestión,Energía">
+            <img class="product-img" src="assets/products/Diab-Zan_fondo.png" alt="Diab-Zan Prame" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Diab-Zan Prame</p>
+              <p class="product-cat">Bienestar</p>
+              <p class="product-price" data-price-id="6">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="6" id="catBtn6">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 7. HIG-SAN PRAME -->
+          <div class="product-card-small fade-in" data-id="7" data-cat="Digestión" data-cats="Depuración,Bienestar">
+            <img class="product-img" src="assets/products/Hig-san_fondo.png" alt="Hig-San Prame" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Hig-San Prame</p>
+              <p class="product-cat">Digestión</p>
+              <p class="product-price" data-price-id="7">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="7" id="catBtn7">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 8. L-Arginina -->
+          <div class="product-card-small fade-in" data-id="8" data-cat="Energía" data-cats="Movimiento,Bienestar">
+            <img class="product-img" src="assets/products/L-Arginina.png" alt="L-Arginina" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">L-Arginina</p>
+              <p class="product-cat">Energía</p>
+              <p class="product-price" data-price-id="8">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="8" id="catBtn8">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 9. MAC PRAME -->
+          <div class="product-card-small fade-in" data-id="9" data-cat="Energía" data-cats="Bienestar,Defensas">
+            <img class="product-img" src="assets/products/Mac_fondo.png" alt="Mac Prame" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Mac Prame</p>
+              <p class="product-cat">Energía</p>
+              <p class="product-price" data-price-id="9">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="9" id="catBtn9">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 10. Prebióticos + Probióticos -->
+          <div class="product-card-small fade-in" data-id="10" data-cat="Digestión" data-cats="Defensas,Bienestar">
+            <img class="product-img" src="assets/products/Prebíoticos_fondo.png" alt="Prebióticos + Probióticos" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Prebióticos + Probióticos</p>
+              <p class="product-cat">Digestión</p>
+              <p class="product-price" data-price-id="10">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="10" id="catBtn10">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 11. Resveratrol + Colágeno -->
+          <div class="product-card-small fade-in" data-id="11" data-cat="Belleza" data-cats="Bienestar,Defensas">
+            <img class="product-img" src="assets/products/Colageno + Resveratrol_fondo.png" alt="Resveratrol + Colágeno" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Resveratrol + Colágeno</p>
+              <p class="product-cat">Belleza</p>
+              <p class="product-price" data-price-id="11">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="11" id="catBtn11">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 12. UG-SANG DRA PRAME -->
+          <div class="product-card-small fade-in" data-id="12" data-cat="Energía" data-cats="Bienestar,Digestión">
+            <img class="product-img" src="assets/products/Ug-San Dra_fondo.png" alt="Ug-San Dra Prame" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Ug-San Dra Prame</p>
+              <p class="product-cat">Energía</p>
+              <p class="product-price" data-price-id="12">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="12" id="catBtn12">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 13. UROL PRAME -->
+          <div class="product-card-small fade-in" data-id="13" data-cat="Depuración" data-cats="Defensas,Bienestar">
+            <img class="product-img" src="assets/products/Urol_fondo.png" alt="Urol Prame" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Urol Prame</p>
+              <p class="product-cat">Depuración</p>
+              <p class="product-price" data-price-id="13">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="13" id="catBtn13">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- 14. Vitamina C -->
+          <div class="product-card-small fade-in" data-id="14" data-cat="Defensas" data-cats="Energía,Bienestar">
+            <img class="product-img" src="assets/products/Vitamina c_fondo.png" alt="Vitamina C" loading="lazy" />
+            <div class="product-info">
+              <p class="product-name">Vitamina C</p>
+              <p class="product-cat">Defensas</p>
+              <p class="product-price" data-price-id="14">Precio por confirmar</p>
+              <button class="btn-add-cart-sm" data-id="14" id="catBtn14">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                Agregar
+              </button>
+            </div>
+          </div>
+
+        </div><!-- /catalog-grid -->
+      </div><!-- /catalog-main -->
+    </div><!-- /catalog-layout -->
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST BANNER
+     ============================================================ -->
+<div class="trust-banner fade-in">
+  <div class="trust-banner-text">
+    <h2>Productos seleccionados para acompañar tu bienestar</h2>
+    <p>En VITA RAÍZ seleccionamos suplementos y nutrición natural pensados para apoyar tu rutina diaria con confianza, cercanía y atención personalizada.</p>
+  </div>
+  <a href="https://wa.me/573150999272" target="_blank" rel="noopener" class="btn-trust" id="trustWaBtn">
+    <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    Hablar con un asesor
+  </a>
+</div>
+
+<!-- ============================================================
+     BENEFITS
+     ============================================================ -->
+<section class="benefits" id="beneficios">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="eyebrow">¿Por qué Vita Raíz?</p>
+      <h2 class="section-title">Compramos diferente, porque te importas</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card fade-in">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Compra fácil por WhatsApp</h3>
+        <p>Agrega tus productos al carrito y envía tu pedido en pocos pasos.</p>
+      </div>
+      <div class="benefit-card fade-in">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Atención personalizada</h3>
+        <p>Estamos para asesorarte y acompañarte en tu compra.</p>
+      </div>
+      <div class="benefit-card fade-in">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Productos seleccionados</h3>
+        <p>Calidad, confianza y bienestar en cada producto.</p>
+      </div>
+      <div class="benefit-card fade-in">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>Envíos según disponibilidad</h3>
+        <p>Confirmamos disponibilidad y valor de envío por WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT US
+     ============================================================ -->
+<section class="about-us" id="contacto">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="eyebrow">Lo que buscamos en Vita Raíz</p>
+      <h2 class="section-title">Nuestro compromiso contigo</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card fade-in">
+        <div class="about-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 22c1.25-1.25 2.5-2.5 3.5-4 1.3-1.97 1.9-3.97 2-5.5.1-1.4-.2-2.9-.6-4.1"/><path d="M6.3 8.5A14.3 14.3 0 0 0 8 22"/><path d="M8 22a14 14 0 0 0 6-10c.7-3.5 0-6-2-8"/><path d="M12 4c2 3 2.5 5.5 1.5 9S10 20 12 22"/></svg>
+        </div>
+        <p>"Acompañarte con productos naturales de calidad."</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <p>"Facilitar una compra clara, rápida y cercana."</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <p>"Ofrecer una experiencia simple desde el catálogo hasta WhatsApp."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA FINAL
+     ============================================================ -->
+<div class="cta-final fade-in">
+  <div class="cta-products" aria-hidden="true">
+    <img src="assets/products/Citrato de magnesio_fondo.png" alt="" />
+    <img src="assets/products/Prebíoticos_fondo.png" alt="" />
+    <img src="assets/products/Vitamina c_fondo.png" alt="" />
+  </div>
+  <div class="cta-text">
+    <h2>Haz tu pedido de forma rápida por WhatsApp</h2>
+    <p>Agrega tus productos al carrito, completa tus datos y envíanos tu pedido para confirmar disponibilidad.</p>
+  </div>
+  <button class="btn-cta" id="ctaOpenCart">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+    Empezar compra
+  </button>
+</div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Col 1: Brand -->
+      <div class="footer-brand">
+        <!-- LOGO: Imagotipo.jpeg (symbol + text + tagline) for footer -->
+        <img src="assets/logos/Imagotipo.jpeg" alt="VITA RAÍZ" />
+        <p>Suplementos y nutrición natural seleccionados para acompañar tu energía, defensas, movimiento, belleza, digestión y bienestar.</p>
+        <div class="footer-wa">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          +57 3150999272
+        </div>
+        <p class="footer-wa-note">Atención por WhatsApp según disponibilidad.</p>
+      </div>
+      <!-- Col 2: Quick links -->
+      <div class="footer-col">
+        <h4>Enlaces Rápidos</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <!-- Col 3: Social -->
+      <div class="footer-col footer-social">
+        <h4>Síguenos En</h4>
+        <a href="https://www.instagram.com/vitaraiz.co/?hl=es" target="_blank" rel="noopener" aria-label="Instagram de Vita Raíz">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61588975863428" target="_blank" rel="noopener" aria-label="Facebook de Vita Raíz">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+    <!-- Legal -->
+    <div class="footer-legal">
+      <p>La información de esta página no reemplaza la orientación de un profesional de la salud. Consulta las indicaciones de cada producto antes de consumirlo.</p>
+      <p>© 2026 VITA RAÍZ. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     WHATSAPP FLOAT
+     ============================================================ -->
+<a href="https://wa.me/573150999272" target="_blank" rel="noopener" class="wa-float" id="waFloat" aria-label="Chatear por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<!-- ============================================================
+     CART OVERLAY
+     ============================================================ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- ============================================================
+     CART DRAWER
+     ============================================================ -->
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" role="complementary">
+  <div class="cart-drawer-header">
+    <h2>Tu carrito</h2>
+    <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <!-- Items list -->
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty" id="cartEmpty">
+      <p>Tu carrito está vacío</p>
+      <button class="btn-primary" onclick="closeCart(); document.getElementById('productos').scrollIntoView({behavior:'smooth'})">Ver productos</button>
+    </div>
+    <!-- Items injected by JS -->
+  </div>
+
+  <!-- Summary -->
+  <div class="cart-summary" id="cartSummary" style="display:none">
+    <div class="cart-summary-row">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">$0</span>
+    </div>
+    <div class="cart-summary-row total">
+      <span>Total</span>
+      <span id="cartTotal">$0</span>
+    </div>
+    <p class="cart-summary-note">* El valor de envío se confirma por WhatsApp.</p>
+  </div>
+
+  <!-- Customer form -->
+  <div class="cart-form" id="cartForm" style="display:none">
+    <h3>Tus datos de entrega</h3>
+    <input type="text" id="formNombre" placeholder="Nombre completo *" autocomplete="name" />
+    <input type="tel" id="formTelefono" placeholder="Teléfono *" autocomplete="tel" />
+    <input type="text" id="formCiudad" placeholder="Ciudad *" autocomplete="address-level2" />
+    <input type="text" id="formBarrio" placeholder="Barrio o zona" />
+    <input type="text" id="formDireccion" placeholder="Dirección de entrega *" autocomplete="street-address" />
+    <textarea id="formObservaciones" placeholder="Observaciones adicionales"></textarea>
+    <p class="form-error" id="formError">Completa tus datos para enviar el pedido.</p>
+  </div>
+
+  <!-- Checkout button -->
+  <button class="btn-checkout" id="btnCheckout" style="display:none">
+    <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.116 1.522 5.852L.057 23.5l5.793-1.519A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.511-5.185-1.401l-.371-.22-3.438.902.917-3.346-.241-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    Enviar pedido por WhatsApp
+  </button>
+</aside>
+
+<!-- ============================================================
+     PRODUCT MODAL
+     ============================================================ -->
+<div class="product-modal-overlay" id="productModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+  <div class="product-modal" style="position:relative">
+    <button class="product-modal-close" id="modalClose" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img class="product-modal-img" id="modalImg" src="" alt="" />
+    <div class="product-modal-body">
+      <h2 id="modalProductName"></h2>
+      <p class="modal-cat" id="modalCat"></p>
+      <p class="modal-desc" id="modalDesc"></p>
+      <p class="modal-price" id="modalPrice"></p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="btn-primary" id="modalAddCart">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+          Agregar al carrito
+        </button>
+        <a class="btn-secondary" id="modalWa" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
